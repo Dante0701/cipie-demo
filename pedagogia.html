@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Licenciatura en Pedagogía – CIPIE</title>
+  <meta name="description" content="Licenciatura en Pedagogía con RVOE 20221456. Incorporada a la DGAIR-SEP. Modalidad mixta, 9 cuatrimestres. Conviértete en el constructor del aprendizaje del mañana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Top Bar ──────────────────────────────────────── -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <span>📞</span>
+          <a href="tel:5529018664">+52 55 2901 8664</a>
+        </div>
+        <div class="topbar-item">
+          <span>✉</span>
+          <a href="mailto:controlescolar@cipie.edu.mx">controlescolar@cipie.edu.mx</a>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-social">
+          <a href="https://www.facebook.com/cipie.cipie.2025" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <a href="https://www.instagram.com/colecipie/" target="_blank" rel="noopener noreferrer" title="Instagram">ig</a>
+        </div>
+        <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer" class="topbar-campus">
+          Campus Virtual
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Header ───────────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav" id="mainNav">
+        <a href="index.html#inicio" class="nav-logo">
+          <img
+            src="https://cipiecampusvirtual.moodlecloud.com/pluginfile.php/1/core_admin/logo/0x200/1774022256/LOGO%20XL%20CIPIE.png"
+            alt="Logo CIPIE"
+            class="nav-logo-img"
+          />
+          <div class="nav-logo-text">
+            <div class="acronym">CIPIE</div>
+            <div class="full-name">COLEGIO INTERDISCIPLINARIO DE PROFESIONISTAS EN INNOVACIÓN EDUCATIVA</div>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#oferta">Oferta Académica</a>
+            <div class="dropdown">
+              <a href="index.html#licenciaturas">Licenciaturas</a>
+              <a href="index.html#posgrados">Posgrados</a>
+              <a href="https://cipie.edu.mx/index.php/licenciaturas-maestrias-y-doctorados/" target="_blank" rel="noopener noreferrer">Ver todos los programas</a>
+            </div>
+          </li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#modalidades">Modalidades</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="validacion-certificados.html">Validar certificado</a></li>
+          <li><a href="validacion-titulos.html">Validar título</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#" onclick="openInscripcionModal(); return false;" class="btn btn-primary">Inscríbete</a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero del programa ─────────────────────────────── -->
+  <section class="prog-hero hero-pedagogia">
+    <div class="container prog-hero-inner">
+      <a href="index.html#oferta" class="prog-hero-back">Regresar a oferta académica</a>
+      <div class="prog-hero-badge">RVOE 20221456 · DGAIR-SEP</div>
+      <h1>Licenciatura en Pedagogía</h1>
+      <p class="prog-hero-sub">
+        Conviértete en el constructor del aprendizaje del mañana. Diseña nuevas formas en que
+        las personas descubren el mundo: apps educativas, videojuegos formativos y proyectos comunitarios.
+      </p>
+      <div class="prog-hero-tags">
+        <span class="prog-hero-tag">9 Cuatrimestres</span>
+        <span class="prog-hero-tag">Modalidad Mixta</span>
+        <span class="prog-hero-tag">Incorporado SEP · 20 oct. 2024</span>
+        <span class="prog-hero-tag">45 Asignaturas</span>
+      </div>
+      <div class="prog-hero-btns">
+        <a href="#" onclick="openInscripcionModal('Licenciatura en Pedagogía'); return false;" class="btn btn-primary">Solicitar información</a>
+        <a href="#plan-estudios" class="btn btn-outline">Ver plan de estudios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats Bar ─────────────────────────────────────── -->
+  <div class="prog-stats">
+    <div class="container">
+      <div class="prog-stats-inner">
+        <div class="prog-stat-item">
+          <div class="prog-stat-icon">🕐</div>
+          <div class="prog-stat-label">Duración</div>
+          <div class="prog-stat-value">3 años<br>(9 cuatrimestres)</div>
+        </div>
+        <div class="prog-stat-item">
+          <div class="prog-stat-icon">📚</div>
+          <div class="prog-stat-label">Asignaturas</div>
+          <div class="prog-stat-value">45 materias</div>
+        </div>
+        <div class="prog-stat-item">
+          <div class="prog-stat-icon">🎓</div>
+          <div class="prog-stat-label">Titulación</div>
+          <div class="prog-stat-value">Tesis o proyecto</div>
+        </div>
+        <div class="prog-stat-item">
+          <div class="prog-stat-icon">💻</div>
+          <div class="prog-stat-label">Modalidad</div>
+          <div class="prog-stat-value">Mixta</div>
+        </div>
+        <div class="prog-stat-item">
+          <div class="prog-stat-icon">🏢</div>
+          <div class="prog-stat-label">Campo laboral</div>
+          <div class="prog-stat-value">Educativo, social<br>y corporativo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Descripción del programa ──────────────────────── -->
+  <section class="prog-desc">
+    <div class="container">
+      <div class="prog-desc-grid">
+
+        <div class="prog-desc-text">
+          <div class="section-label">Sobre el programa</div>
+          <h2>¿Por qué estudiar Pedagogía?</h2>
+          <p>
+            Vivimos en un mundo que cambia a una velocidad impresionante. Tecnologías como la IA están
+            reinventando como vivimos, pero ¿Quién enseña a la humanidad a adaptarse a esos cambios?
+            Ahí es donde entra el Pedagogo.
+          </p>
+          <p>
+            Estudiar Pedagogía te convierte en constructor del aprendizaje del mañana.
+            Diseñarás las nuevas formas en que las personas descubren el mundo, ya sea a través de
+            aplicaciones educativas, videojuegos formativos o proyectos comunitarios.
+          </p>
+          <p>
+            Existe el mito que los pedagogos sólo trabajan en un salón de clases, dentro de una escuela.
+            La realidad actual es completamente diferente. Un profesional de la Pedagogía es indispensable
+            en múltiples sectores de la sociedad moderna.
+          </p>
+          <p>
+            Si te preocupa lo que pasa a tu alrededor, la desigualdad social, la falta de oportunidades
+            o los problemas de salud mental en los jóvenes, la Pedagogía te da las herramientas científicas
+            y humanas para actuar. Aprenderás Sociología y Comunicación para entender cómo aprende la mente
+            humana y cómo romper las barreras que frenan a los demás.
+          </p>
+          <p>
+            Como pedagogo, tú eres quien impulsa a esa gente a lograrlo.
+          </p>
+        </div>
+
+        <div>
+          <div class="prog-fields">
+            <h3>Campos de acción profesional</h3>
+
+            <div class="prog-field-item">
+              <div class="prog-field-dot"></div>
+              <div class="prog-field-content">
+                <strong>Empresas y Corporativos</strong>
+                <span>Creando programas de capacitación y desarrollo de talento humano.</span>
+              </div>
+            </div>
+
+            <div class="prog-field-item">
+              <div class="prog-field-dot"></div>
+              <div class="prog-field-content">
+                <strong>Tecnología y Medios</strong>
+                <span>Diseñando contenido para plataformas educativas digitales.</span>
+              </div>
+            </div>
+
+            <div class="prog-field-item">
+              <div class="prog-field-dot"></div>
+              <div class="prog-field-content">
+                <strong>Proyectos Sociales y ONGs</strong>
+                <span>Desarrollando programas de apoyo para comunidades vulnerables o museos.</span>
+              </div>
+            </div>
+
+            <div class="prog-field-item">
+              <div class="prog-field-dot"></div>
+              <div class="prog-field-content">
+                <strong>Consultoría Independiente</strong>
+                <span>Asesoramiento a instituciones o creando proyectos propios de innovación educativa.</span>
+              </div>
+            </div>
+
+            <div class="prog-field-item">
+              <div class="prog-field-dot"></div>
+              <div class="prog-field-content">
+                <strong>Instituciones Educativas</strong>
+                <span>Gestión escolar, diseño curricular y orientación educativa a todos los niveles.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Cita ──────────────────────────────────────────── -->
+  <section class="prog-quote">
+    <div class="container">
+      <div class="prog-quote-inner">
+        <p class="prog-quote-text">
+          Mucha gente pequeña, en lugares pequeños, haciendo cosas pequeñas, pueden cambiar al mundo
+        </p>
+        <div class="prog-quote-author">— Eduardo Galeano</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Plan de Estudios ──────────────────────────────── -->
+  <section class="prog-curriculum" id="plan-estudios">
+    <div class="container">
+      <div class="prog-curriculum-header">
+        <div class="section-label">Mapa curricular</div>
+        <h2>Plan de Estudios</h2>
+        <p>
+          9 cuatrimestres diseñados para formarte como profesional integral de la educación,
+          con bases teóricas sólidas y herramientas prácticas de vanguardia.
+        </p>
+      </div>
+
+      <div class="cuatri-grid">
+
+        <!-- Cuatrimestre 1 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">1</div>
+            <div class="cuatri-title">1er Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Teorías del Aprendizaje</div>
+            <div class="cuatri-subject">Teoría Pedagógica I</div>
+            <div class="cuatri-subject">Sociología de la Educación</div>
+            <div class="cuatri-subject">Psicología Educacional</div>
+            <div class="cuatri-subject">Investigación Educativa I</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 2 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">2</div>
+            <div class="cuatri-title">2do Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Historia del Fenómeno Educativo</div>
+            <div class="cuatri-subject">Teoría Pedagógica II</div>
+            <div class="cuatri-subject">Fundamentos Económicos en la Educación</div>
+            <div class="cuatri-subject">Desarrollo del Aprendizaje I</div>
+            <div class="cuatri-subject">Investigación Educativa II</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 3 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">3</div>
+            <div class="cuatri-title">3er Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Historia de la Educación en México</div>
+            <div class="cuatri-subject">Didáctica General</div>
+            <div class="cuatri-subject">Marco Normativo en Educación</div>
+            <div class="cuatri-subject">Desarrollo del Aprendizaje II</div>
+            <div class="cuatri-subject">Introducción a la Estadística</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 4 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">4</div>
+            <div class="cuatri-title">4to Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Tendencias Pedagógicas Contemporáneas</div>
+            <div class="cuatri-subject">Didáctica Aplicada</div>
+            <div class="cuatri-subject">Análisis del Sistema Educativo Mexicano</div>
+            <div class="cuatri-subject">Psicotécnica I</div>
+            <div class="cuatri-subject">Estadística Aplicada</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 5 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">5</div>
+            <div class="cuatri-title">5to Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Gestión Escolar</div>
+            <div class="cuatri-subject">Diseño de Recursos Didácticos</div>
+            <div class="cuatri-subject">Comunicación Educativa</div>
+            <div class="cuatri-subject">Psicotécnica II</div>
+            <div class="cuatri-subject">Orientación Educativa</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 6 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">6</div>
+            <div class="cuatri-title">6to Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Reingeniería Organizacional Educativa</div>
+            <div class="cuatri-subject">Evaluación del Aprendizaje</div>
+            <div class="cuatri-subject">Uso de Tecnologías Educativas</div>
+            <div class="cuatri-subject">Educación Inclusiva</div>
+            <div class="cuatri-subject">Orientación Vocacional</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 7 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">7</div>
+            <div class="cuatri-title">7mo Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Capacitación Laboral</div>
+            <div class="cuatri-subject">Planeación Docente</div>
+            <div class="cuatri-subject">Educación a Distancia</div>
+            <div class="cuatri-subject">Intervención en Grupos Incluyentes</div>
+            <div class="cuatri-subject">Taller de Lectura y Redacción</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 8 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">8</div>
+            <div class="cuatri-title">8vo Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Formación de Talento Competitivo</div>
+            <div class="cuatri-subject">Evaluación Magisterial</div>
+            <div class="cuatri-subject">Educación No Formal</div>
+            <div class="cuatri-subject">Prácticas Escolares</div>
+            <div class="cuatri-subject">Seminario de Titulación I</div>
+          </div>
+        </div>
+
+        <!-- Cuatrimestre 9 -->
+        <div class="cuatri-card">
+          <div class="cuatri-card-header">
+            <div class="cuatri-num">9</div>
+            <div class="cuatri-title">9no Cuatrimestre</div>
+          </div>
+          <div class="cuatri-card-body">
+            <div class="cuatri-subject">Identidad y Vinculación Profesional</div>
+            <div class="cuatri-subject">Educación Continua</div>
+            <div class="cuatri-subject">Innovación Educativa</div>
+            <div class="cuatri-subject">Ética del Magisterio</div>
+            <div class="cuatri-subject">Seminario de Titulación II</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <section class="prog-cta">
+    <div class="container">
+      <h2>¿Listo para iniciar tu formación?</h2>
+      <p>Nuestro equipo de asesores está listo para orientarte. Contáctanos sin costo ni compromiso.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/525529018664" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Escribir por WhatsApp
+        </a>
+        <a href="mailto:controlescolar@cipie.edu.mx" class="btn btn-outline">
+          Enviar correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img
+              src="https://cipiecampusvirtual.moodlecloud.com/pluginfile.php/1/core_admin/logo/0x200/1774022256/LOGO%20XL%20CIPIE.png"
+              alt="Logo CIPIE"
+              class="footer-logo-img"
+            />
+          </div>
+          <p>Formamos líderes para transformar el futuro con excelencia académica, innovación y compromiso social.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/cipie.cipie.2025" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+            <a href="https://www.instagram.com/colecipie/" target="_blank" rel="noopener noreferrer" title="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información institucional</h4>
+          <ul>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#oferta">Oferta académica</a></li>
+            <li><a href="index.html#modalidades">Modalidades</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="https://cipie.edu.mx" target="_blank" rel="noopener noreferrer">Sitio oficial</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programas</h4>
+          <ul>
+            <li><a href="pedagogia.html">Lic. en Pedagogía</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/derecho/" target="_blank" rel="noopener noreferrer">Lic. en Derecho</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/administracion/" target="_blank" rel="noopener noreferrer">Lic. en Administración</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/posgrados/" target="_blank" rel="noopener noreferrer">Maestrías</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/posgrados/" target="_blank" rel="noopener noreferrer">Doctorados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div class="footer-contact-detail">
+              <a href="tel:5529018664">+52 55 2901 8664</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉</div>
+            <div class="footer-contact-detail">
+              <a href="mailto:controlescolar@cipie.edu.mx">controlescolar@cipie.edu.mx</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🌐</div>
+            <div class="footer-contact-detail">
+              <a href="https://cipie.edu.mx" target="_blank" rel="noopener noreferrer">cipie.edu.mx</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🎓</div>
+            <div class="footer-contact-detail">
+              <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer">Campus Virtual</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CIPIE – Colegio Interdisciplinario de Profesionistas en Innovación Educativa. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="aviso-privacidad.html" target="_blank" rel="noopener noreferrer">Aviso de privacidad</a>
+          <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Inscripción Modal ─────────────────────────────── -->
+  <div class="modal-overlay" id="inscripcionModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar formulario">✕</button>
+      <div class="modal-header">
+        <div class="section-label">Inscripciones</div>
+        <h2 class="modal-title" id="modalTitle">Solicitar información</h2>
+        <p class="modal-sub">Déjanos tus datos y te contactaremos para orientarte sobre programas, costos y proceso de ingreso.</p>
+      </div>
+      <form class="inscripcion-form" id="inscripcionForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-nombre">Nombre completo <span class="req">*</span></label>
+            <input type="text" id="fi-nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="fi-email">Correo electrónico <span class="req">*</span></label>
+            <input type="email" id="fi-email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-tel">Teléfono / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="fi-tel" name="telefono" placeholder="55 2901 8664" required autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="fi-programa">Programa de interés <span class="req">*</span></label>
+            <select id="fi-programa" name="programa" required>
+              <option value="" disabled selected>Selecciona un programa</option>
+              <optgroup label="Licenciaturas">
+                <option>Licenciatura en Pedagogía</option>
+                <option>Licenciatura en Derecho</option>
+                <option>Licenciatura en Administración de Empresas</option>
+              </optgroup>
+              <optgroup label="Posgrados">
+                <option>Maestría en Ciencias de la Educación</option>
+                <option>Maestría en Juicios Orales</option>
+                <option>Doctorado en Educación</option>
+                <option>Doctorado en Derecho</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-modalidad">Modalidad preferida</label>
+            <select id="fi-modalidad" name="modalidad">
+              <option value="" selected>Sin preferencia</option>
+              <option>Escolarizada (presencial)</option>
+              <option>Mixta / Híbrida</option>
+              <option>No escolarizada (100% en línea)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fi-mensaje">Mensaje o duda</label>
+            <textarea id="fi-mensaje" name="mensaje" placeholder="¿Tienes alguna pregunta o comentario?" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-check" id="fi-privacy-wrap">
+          <input type="checkbox" id="fi-privacy" name="privacidad" required />
+          <label for="fi-privacy">
+            Acepto el <a href="aviso-privacidad.html" target="_blank" rel="noopener noreferrer">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos para recibir información académica. <span class="req">*</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn">Solicitar información →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── Chat Widget ──────────────────────────────────── -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- Panel -->
+    <div class="chat-panel" id="chatPanel" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">C</div>
+          <div>
+            <div class="chat-title">CIPIE IA</div>
+            <div class="chat-subtitle">Asistente virtual</div>
+          </div>
+        </div>
+        <button class="chat-close" id="chatClose" aria-label="Cerrar chat">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <p>¡Hola! Soy el asistente virtual de <strong>CIPIE</strong> con IA. Puedo responder cualquier pregunta sobre programas, admisiones, modalidades y más. ¿En qué puedo ayudarte?</p>
+        </div>
+      </div>
+
+      <div class="chat-chips" id="chatChips">
+        <button class="chip" data-msg="Licenciaturas">Licenciaturas</button>
+        <button class="chip" data-msg="Posgrados">Posgrados</button>
+        <button class="chip" data-msg="Admisiones">Admisiones</button>
+        <button class="chip" data-msg="Contacto">Contacto</button>
+      </div>
+
+      <div class="chat-input-row">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-input"
+          placeholder="Escribe tu pregunta..."
+          maxlength="200"
+          autocomplete="off"
+        />
+        <button class="chat-send" id="chatSend" aria-label="Enviar">
+          <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- FAB -->
+    <button class="chat-fab" id="chatFab" aria-label="Abrir asistente virtual">
+      <span class="chat-fab-icon chat-fab-open">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+      </span>
+      <span class="chat-fab-icon chat-fab-close" style="display:none;">✕</span>
+      <span class="chat-fab-badge">IA</span>
+    </button>
+
+  </div>
+
+  <!-- ── WhatsApp FAB ──────────────────────────────────── -->
+  <a href="https://wa.me/525529018664" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" title="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2A15.2 15.2 0 0016 31.2C24.4 31.2 31.2 24.4 31.2 16S24.4.8 16 .8zm0 27.8a13.4 13.4 0 01-6.8-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A13.4 13.4 0 012.6 16C2.6 8.6 8.6 2.6 16 2.6S29.4 8.6 29.4 16 23.4 28.6 16 28.6zm7.4-10c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.6-.2.3-.5.3-.9.1-.4-.2-1.8-.7-3.4-2.1-1.3-1.1-2.1-2.5-2.4-2.9-.2-.4 0-.6.2-.8l.7-.8c.2-.2.2-.4.4-.7.1-.2 0-.5-.1-.7-.1-.2-1-2.3-1.3-3.2-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.3 0 2 1.4 3.8 1.6 4.1.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.2.8.9.3 1.8.2 2.4.1.7-.1 2.2-.9 2.5-1.8.3-.8.3-1.6.2-1.7-.1-.2-.4-.3-.8-.5z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Hamburger menu
+    const btn = document.getElementById('hamburgerBtn');
+    const nav = document.getElementById('mainNav');
+    if (btn && nav) {
+      // Function to toggle mobile menu
+      function toggleMobileMenu() {
+        nav.classList.toggle('nav-open');
+        nav.classList.toggle('open');
+        btn.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+      }
+
+      // Function to close mobile menu
+      function closeMobileMenu() {
+        nav.classList.remove('nav-open');
+        nav.classList.remove('open');
+        btn.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // El evento 'click' ya funciona con un toque en móvil. Usar 'touchstart'
+      // cerraba el menú antes de navegar y rompía los enlaces en celular.
+      btn.addEventListener('click', toggleMobileMenu);
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+      });
+    }
+
+    // ── Inscripción Modal ───────────────────────────────
+    var inscripcionModal = document.getElementById('inscripcionModal');
+    function openInscripcionModal(programa) {
+      inscripcionModal.classList.add('active');
+      inscripcionModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (programa) {
+        var sel = document.getElementById('fi-programa');
+        sel.value = programa;
+        sel.classList.remove('invalid');
+      }
+    }
+    function closeInscripcionModal() {
+      inscripcionModal.classList.remove('active');
+      inscripcionModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('modalClose').addEventListener('click', closeInscripcionModal);
+    inscripcionModal.addEventListener('click', function (e) {
+      if (e.target === this) closeInscripcionModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeInscripcionModal();
+    });
+    document.getElementById('inscripcionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var nombre    = document.getElementById('fi-nombre').value.trim();
+      var email     = document.getElementById('fi-email').value.trim();
+      var tel       = document.getElementById('fi-tel').value.trim();
+      var programa  = document.getElementById('fi-programa').value;
+      var modalidad = document.getElementById('fi-modalidad').value;
+      var mensaje   = document.getElementById('fi-mensaje').value.trim();
+      var privacy   = document.getElementById('fi-privacy').checked;
+      var valid = true;
+      ['fi-nombre','fi-email','fi-tel','fi-programa'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (!el.value.trim()) { el.classList.add('invalid'); valid = false; }
+        else el.classList.remove('invalid');
+      });
+      var privacyWrap = document.getElementById('fi-privacy-wrap');
+      if (!privacy) { privacyWrap.classList.add('invalid-check'); valid = false; }
+      else privacyWrap.classList.remove('invalid-check');
+      if (!valid) return;
+      var msg = 'Hola, me interesa recibir información sobre CIPIE.\n\n'
+              + '*Nombre:* ' + nombre + '\n'
+              + '*Email:* ' + email + '\n'
+              + '*Teléfono:* ' + tel + '\n'
+              + '*Programa de interés:* ' + programa;
+      if (modalidad) msg += '\n*Modalidad preferida:* ' + modalidad;
+      if (mensaje)   msg += '\n*Mensaje:* ' + mensaje;
+      window.open('https://wa.me/525529018664?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
+      closeInscripcionModal();
+      this.reset();
+    });
+    ['fi-nombre','fi-email','fi-tel','fi-programa'].forEach(function(id){
+      document.getElementById(id).addEventListener('input', function(){ this.classList.remove('invalid'); });
+    });
+    document.getElementById('fi-privacy').addEventListener('change', function(){
+      document.getElementById('fi-privacy-wrap').classList.remove('invalid-check');
+    });
+
+    // ── Chat Widget ────────────────────────────────────
+    const chatFab     = document.getElementById('chatFab');
+    const chatPanel   = document.getElementById('chatPanel');
+    const chatClose   = document.getElementById('chatClose');
+    const chatMessages= document.getElementById('chatMessages');
+    const chatInput   = document.getElementById('chatInput');
+    const chatSend    = document.getElementById('chatSend');
+    const chatChips   = document.getElementById('chatChips');
+    const fabOpen     = chatFab.querySelector('.chat-fab-open');
+    const fabClose    = chatFab.querySelector('.chat-fab-close');
+
+    let isOpen = false;
+
+    function openChat() {
+      isOpen = true;
+      chatPanel.classList.add('active');
+      chatPanel.setAttribute('aria-hidden', 'false');
+      fabOpen.style.display  = 'none';
+      fabClose.style.display = 'block';
+      chatInput.focus();
+    }
+
+    function closeChat() {
+      isOpen = false;
+      chatPanel.classList.remove('active');
+      chatPanel.setAttribute('aria-hidden', 'true');
+      fabOpen.style.display  = 'block';
+      fabClose.style.display = 'none';
+    }
+
+    chatFab.addEventListener('click', () => isOpen ? closeChat() : openChat());
+    chatClose.addEventListener('click', closeChat);
+
+    // ── Gemini AI ────────────────────────────────────
+    const GEMINI_API_KEY = 'AQ.Ab8RN6Il5XoyvptFzm00ZTwYS2U5FKIB6SJjExRWvvMBw2GWjw';
+    const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + GEMINI_API_KEY;
+
+    const SYSTEM_PROMPT = `Eres el asistente virtual oficial del CIPIE (Colegio Interdisciplinario de Profesionistas en Innovación Educativa). 
+Responde SIEMPRE en español, de forma amable, concisa y clara. No uses listas con asteriscos, usa guiones o puntos. 
+No inventes información. Si no sabes algo, deriva al WhatsApp +52 55 2901 8664 o al correo controlescolar@cipie.edu.mx.`;
+
+    const conversationHistory = [];
+
+    async function callGeminiAI(userMessage) {
+      conversationHistory.push({ role: 'user', parts: [{ text: userMessage }] });
+      const body = {
+        system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+        contents: conversationHistory,
+        generationConfig: { temperature: 0.7, maxOutputTokens: 400, topP: 0.9 }
+      };
+      const response = await fetch(GEMINI_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      if (!response.ok) {
+        const err = await response.json().catch(() => ({}));
+        throw new Error(err?.error?.message || 'Error ' + response.status);
+      }
+      const data = await response.json();
+      const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || 'Sin respuesta.';
+      conversationHistory.push({ role: 'model', parts: [{ text: reply }] });
+      return reply;
+    }
+
+    const KB = [
+      { keys: ['licenciatura', 'carrera', 'pregrado'], answer: 'Ofrecemos 3 licenciaturas con RVOE:\n- <b>Pedagogía</b> – 9 cuatrimestres, modalidad mixta\n- <b>Derecho</b> – 9 cuatrimestres, modalidad escolar\n- <b>Administración de Empresas</b> – 9 cuatrimestres, en línea\n¿Quieres info de alguna en particular?' },
+      { keys: ['posgrado', 'maestría', 'maestria', 'doctorado'], answer: 'Posgrados disponibles (4 cuatrimestres c/u):\n- Maestría en Ciencias de la Educación\n- Maestría en Juicios Orales\n- Doctorado en Educación\n- Doctorado en Derecho' },
+      { keys: ['admision', 'admisión', 'inscripcion', 'inscripción', 'requisito', 'inscribir'], answer: 'Requisitos: certificado de estudios, ID oficial y CURP.\nEscríbenos al WhatsApp <b>+52 55 2901 8664</b> para iniciar tu proceso.' },
+      { keys: ['costo', 'precio', 'colegiatura', 'pago'], answer: 'Para costos y opciones de pago contáctanos:\n📱 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>' },
+      { keys: ['certificado', 'titulo', 'título', 'validar', 'validacion', 'validación', 'folio'], answer: 'Puedes validar tu <b>certificado</b> o <b>título</b> en nuestras páginas de verificación, que consultan el sistema oficial SIGED de la SEP con el folio del documento.' },
+      { keys: ['modalidad', 'linea', 'online', 'presencial'], answer: '3 modalidades: <b>Escolarizada</b> (presencial), <b>Mixta</b> (híbrida) y <b>No escolarizada</b> (100% en línea vía Moodle).' },
+      { keys: ['contacto', 'telefono', 'correo', 'email'], answer: '📞 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>\n🌐 cipie.edu.mx' },
+      { keys: ['hola', 'buenos', 'buenas'], answer: '¡Hola! 👋 Soy el asistente de CIPIE. Puedo ayudarte con info sobre programas, admisiones o contacto.' },
+      { keys: ['gracias'], answer: '¡Con gusto! Para atención personalizada escríbenos al WhatsApp <b>+52 55 2901 8664</b>. 😊' }
+    ];
+
+    function getFallbackAnswer(text) {
+      const lower = text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      for (const e of KB) {
+        if (e.keys.some(k => lower.includes(k))) return e.answer;
+      }
+      return 'Puedes consultarnos directamente:\n📱 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>';
+    }
+
+    function addMessage(html, role) {
+      const div = document.createElement('div');
+      div.className = 'chat-msg ' + role;
+      const p = document.createElement('p');
+      p.innerHTML = html.replace(/\n/g, '<br>');
+      div.appendChild(p);
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typing = document.createElement('div');
+      typing.className = 'chat-msg bot typing';
+      typing.id = 'typingIndicator';
+      typing.innerHTML = '<p><span class="dot"></span><span class="dot"></span><span class="dot"></span></p>';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return typing;
+    }
+
+    async function sendMessage(text) {
+      text = text.trim();
+      if (!text) return;
+      addMessage(text, 'user');
+      chatInput.value = '';
+      chatInput.disabled = true;
+      chatSend.disabled = true;
+      chatChips.style.display = 'none';
+      const typing = showTyping();
+      try {
+        let reply;
+        if (!GEMINI_API_KEY || GEMINI_API_KEY === 'COLOCA_TU_API_KEY_AQUI') {
+          await new Promise(r => setTimeout(r, 500));
+          reply = getFallbackAnswer(text);
+        } else {
+          reply = await callGeminiAI(text);
+          reply = reply.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\*(.*?)\*/g, '$1');
+        }
+        typing.remove();
+        addMessage(reply, 'bot');
+      } catch (err) {
+        typing.remove();
+        const fallback = getFallbackAnswer(text);
+        addMessage(fallback + '<br><br><small style="opacity:.6">⚠ Error: ' + err.message + '</small>', 'bot');
+        console.error('Gemini error:', err);
+      } finally {
+        chatInput.disabled = false;
+        chatSend.disabled = false;
+        chatInput.focus();
+      }
+    }
+
+    chatSend.addEventListener('click', () => sendMessage(chatInput.value));
+    chatInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) sendMessage(chatInput.value); });
+    chatChips.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => sendMessage(chip.dataset.msg));
+    });
+  </script>
+
+</body>
+</html>

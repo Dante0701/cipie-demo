@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIPIE – Colegio Interdisciplinario de Profesionistas en Innovación Educativa</title>
+  <meta name="description" content="CIPIE impulsa una educación innovadora, cercana y orientada al desarrollo humano y social. Licenciaturas, maestrías y doctorados con RVOE vigente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Top Bar ──────────────────────────────────────── -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <span>📞</span>
+          <a href="tel:5529018664">+52 55 2901 8664</a>
+        </div>
+        <div class="topbar-item">
+          <span>✉</span>
+          <a href="mailto:controlescolar@cipie.edu.mx">controlescolar@cipie.edu.mx</a>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-social">
+          <a href="https://www.facebook.com/cipie.cipie.2025" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+          <a href="https://www.instagram.com/colecipie/" target="_blank" rel="noopener noreferrer" title="Instagram">ig</a>
+        </div>
+        <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer" class="topbar-campus">
+          Campus Virtual
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Header ───────────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav" id="mainNav">
+        <a href="#inicio" class="nav-logo">
+          <img
+            src="https://cipiecampusvirtual.moodlecloud.com/pluginfile.php/1/core_admin/logo/0x200/1774022256/LOGO%20XL%20CIPIE.png"
+            alt="Logo CIPIE"
+            class="nav-logo-img"
+          />
+          <div class="nav-logo-text">
+            <div class="acronym">CIPIE</div>
+            <div class="full-name">COLEGIO INTERDISCIPLINARIO DE PROFESIONISTAS EN INNOVACIÓN EDUCATIVA</div>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li class="has-dropdown">
+            <a href="#oferta">Oferta Académica</a>
+            <div class="dropdown">
+              <a href="#licenciaturas">Licenciaturas</a>
+              <a href="#posgrados">Posgrados</a>
+              <a href="https://cipie.edu.mx/index.php/licenciaturas-maestrias-y-doctorados/" target="_blank" rel="noopener noreferrer">Ver todos los programas</a>
+            </div>
+          </li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="validacion-certificados.html">Validar certificado</a></li>
+          <li><a href="validacion-titulos.html">Validar título</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#" onclick="openInscripcionModal(); return false;" class="btn btn-primary">Inscríbete</a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero ─────────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Innovación Educativa · DGAIR-SEP</div>
+        <h1>Educación superior con <em>propósito</em> e innovación.</h1>
+        <p class="hero-sub">
+          En CIPIE formamos profesionistas con visión interdisciplinaria, utilizando
+          neurodidáctica aplicada y plataformas de última generación para llevar tu
+          aprendizaje al siguiente nivel.
+        </p>
+        <div class="hero-btns">
+          <a href="#" onclick="openInscripcionModal(); return false;" class="btn btn-primary">Inscríbete ahora</a>
+          <a href="#oferta" class="btn btn-outline">Oferta académica</a>
+          <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Campus Virtual</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">7+</div>
+            <div class="hero-stat-label">Programas con RVOE</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Avalados por SEP</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">3</div>
+            <div class="hero-stat-label">Modalidades de estudio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Identity ─────────────────────────────────────── -->
+  <section class="identity" id="nosotros">
+    <div class="container">
+      <div class="identity-grid">
+        <div class="identity-img-wrap">
+          <img
+            src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Estudiantes CIPIE en formación"
+            class="identity-img"
+          />
+          <div class="identity-card">
+            <div class="identity-card-num">2022</div>
+            <div class="identity-card-text">Año de fundación con visión de transformar la educación superior en México.</div>
+          </div>
+        </div>
+
+        <div class="identity-text">
+          <div class="section-label">Identidad institucional</div>
+          <h2 class="section-title">Formación profesional con innovación, método y propósito.</h2>
+          <p>
+            El Colegio Interdisciplinario de Profesionistas en Innovación Educativa impulsa
+            una educación cercana, rigurosa y orientada al desarrollo humano, académico y social
+            de su comunidad. Creemos en la transformación del aprendizaje a través de la tecnología,
+            la neurodidáctica y el trabajo colaborativo.
+          </p>
+          <p>
+            Estudiar en línea con CIPIE significa acceder a plataformas de última generación,
+            redes de colaboración y docentes comprometidos que superan los límites de un salón físico.
+          </p>
+
+          <div class="identity-features">
+            <div class="identity-feature">
+              <div class="identity-feature-icon">🎓</div>
+              <div class="identity-feature-text">Programas con RVOE vigente</div>
+            </div>
+            <div class="identity-feature">
+              <div class="identity-feature-icon">💻</div>
+              <div class="identity-feature-text">Plataforma digital avanzada</div>
+            </div>
+            <div class="identity-feature">
+              <div class="identity-feature-icon">🧠</div>
+              <div class="identity-feature-text">Neurodidáctica aplicada</div>
+            </div>
+            <div class="identity-feature">
+              <div class="identity-feature-icon">🤝</div>
+              <div class="identity-feature-text">Acompañamiento personalizado</div>
+            </div>
+          </div>
+
+          <div style="margin-top:36px;">
+            <a href="#oferta" class="btn btn-outline-dark">Ver oferta académica</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Programs ─────────────────────────────────────── -->
+  <section class="programs" id="oferta">
+    <div class="container">
+      <div class="programs-header">
+        <div class="section-label">Oferta académica</div>
+        <h2 class="section-title">Programas con RVOE vigente</h2>
+        <p class="section-sub" style="margin-top:14px;">
+          Todos nuestros programas están incorporados a la DGAIR-SEP con Reconocimiento de Validez Oficial de Estudios.
+        </p>
+      </div>
+
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="lic">Licenciaturas</button>
+        <button class="tab-btn" data-tab="pos">Posgrados</button>
+      </div>
+
+      <!-- Licenciaturas -->
+      <div class="tab-panel active" id="panel-lic">
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Licenciatura en Pedagogía"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20221456</span>
+            <h3>Licenciatura en Pedagogía</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">9 cuatrimestres</span>
+              <span class="prog-meta-tag">Modalidad mixta</span>
+            </div>
+            <p>
+              Conviértete en el constructor del aprendizaje del mañana. Diseña nuevas formas en que
+              las personas descubren el mundo: apps educativas, videojuegos formativos y proyectos comunitarios.
+            </p>
+            <a href="pedagogia.html" class="prog-card-link">Ver programa →</a>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Licenciatura en Derecho"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20240616</span>
+            <h3>Licenciatura en Derecho</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">9 cuatrimestres</span>
+              <span class="prog-meta-tag">Modalidad escolar</span>
+            </div>
+            <p>
+              Conviértete en estratega y solucionador de problemas. Domina el Derecho Digital, Ambiental
+              y de Entretenimiento para actuar en los campos más innovadores del siglo XXI.
+            </p>
+            <a href="derecho.html" class="prog-card-link">Ver programa →</a>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Licenciatura en Administración de Empresas"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20251876</span>
+            <h3>Licenciatura en Administración de Empresas</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">9 cuatrimestres</span>
+              <span class="prog-meta-tag">No escolarizada</span>
+            </div>
+            <p>
+              Si tienes mentalidad creativa y alma de líder, esta carrera te da las herramientas para
+              incubar ideas, crear estrategias digitales y liderar equipos en cualquier industria.
+            </p>
+            <a href="https://cipie.edu.mx/index.php/administracion/" target="_blank" rel="noopener noreferrer" class="prog-card-link">Ver programa</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Posgrados -->
+      <div class="tab-panel" id="panel-pos">
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Maestría en Ciencias de la Educación"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20221170</span>
+            <h3>Maestría en Ciencias de la Educación</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">4 cuatrimestres</span>
+              <span class="prog-meta-tag">Modalidad escolar</span>
+            </div>
+            <p>
+              Profundiza en la investigación y gestión educativa. Forma parte de la transformación
+              del sistema educativo con herramientas científicas de vanguardia.
+            </p>
+            <a href="maestria-ciencias-educacion.html" class="prog-card-link">Ver programa →</a>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Maestría en Juicios Orales"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20221457</span>
+            <h3>Maestría en Juicios Orales</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">4 cuatrimestres</span>
+              <span class="prog-meta-tag">Modalidad escolar</span>
+            </div>
+            <p>
+              Especialízate en el sistema acusatorio y el litigio oral. Prepárate para los retos
+              del Derecho contemporáneo con alta demanda en el mercado laboral.
+            </p>
+            <a href="maestria-juicios-orales.html" class="prog-card-link">Ver programa →</a>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/3228684/pexels-photo-3228684.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Doctorado en Educación"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20221169</span>
+            <h3>Doctorado en Educación</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">4 cuatrimestres</span>
+              <span class="prog-meta-tag">Modalidad escolar</span>
+            </div>
+            <p>
+              El nivel más alto de especialización en ciencias educativas. Contribuye al conocimiento
+              científico y lidera la transformación del sistema educativo en México.
+            </p>
+            <a href="doctorado-educacion.html" class="prog-card-link">Ver programa →</a>
+          </div>
+        </div>
+
+        <div class="prog-card">
+          <img
+            src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=700"
+            alt="Doctorado en Derecho"
+            class="prog-card-img"
+          />
+          <div class="prog-card-body">
+            <span class="prog-card-badge">RVOE 20251877</span>
+            <h3>Doctorado en Derecho</h3>
+            <div class="prog-card-meta">
+              <span class="prog-meta-tag">4 cuatrimestres</span>
+              <span class="prog-meta-tag">No escolarizada</span>
+            </div>
+            <p>
+              Alcanza la máxima formación jurídica. Investiga, propone y genera conocimiento
+              en las áreas más complejas del Derecho contemporáneo con flexibilidad total.
+            </p>
+            <a href="https://cipie.edu.mx/index.php/doctorado-en-derecho/" target="_blank" rel="noopener noreferrer" class="prog-card-link">Ver programa</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Values ────────────────────────────────────────── -->
+  <section class="values" id="valores">
+    <div class="container">
+      <div class="values-header">
+        <div class="section-label" style="color:var(--accent-lt);">Nuestra comunidad</div>
+        <h2 class="section-title light">Una comunidad académica con principios claros</h2>
+        <p class="section-sub" style="margin-top:14px;margin-inline:auto;">
+          En CIPIE compartimos valores que guían cada decisión académica y humana.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">⭐</span>
+          <div class="value-name">Excelencia</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🔬</span>
+          <div class="value-name">Innovación</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <div class="value-name">Integridad</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🌍</span>
+          <div class="value-name">Responsabilidad Social</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">💪</span>
+          <div class="value-name">Disciplina</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🧠</span>
+          <div class="value-name">Pensamiento Crítico</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">👑</span>
+          <div class="value-name">Liderazgo</div>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤲</span>
+          <div class="value-name">Trabajo Colaborativo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Modalities ────────────────────────────────────── -->
+  <section class="modalities" id="modalidades">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="section-label">Flexibilidad real</div>
+        <h2 class="section-title">Estudia como quieras, cuando quieras</h2>
+        <p class="section-sub" style="margin-top:14px;margin-inline:auto;">
+          Ofrecemos tres modalidades para que adaptes tu formación a tu ritmo de vida.
+        </p>
+      </div>
+
+      <div class="modalities-grid">
+        <div class="mod-card">
+          <div class="mod-icon">🏫</div>
+          <h3>Escolarizada</h3>
+          <p>Clases presenciales con horarios fijos. Interacción directa con docentes y compañeros para una experiencia universitaria completa.</p>
+        </div>
+        <div class="mod-card">
+          <div class="mod-icon">🔀</div>
+          <h3>Mixta / Híbrida</h3>
+          <p>Combina sesiones presenciales con actividades en línea. Lo mejor de ambos mundos con la flexibilidad que necesitas.</p>
+        </div>
+        <div class="mod-card">
+          <div class="mod-icon">💻</div>
+          <h3>No Escolarizada (Online)</h3>
+          <p>100% en línea a través de nuestra plataforma Moodle. Aprende desde cualquier lugar con neurodidáctica y recursos digitales de vanguardia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why CIPIE ─────────────────────────────────────── -->
+  <section class="why" id="porque">
+    <div class="container">
+      <div class="why-grid">
+        <div>
+          <div class="section-label">¿Por qué elegirnos?</div>
+          <h2 class="section-title">Tu futuro comienza aquí</h2>
+          <ul class="why-list">
+            <li>
+              <div class="why-check">✓</div>
+              <div class="why-list-text">
+                <strong>Programas oficiales y vigentes</strong>
+                <span>Todos nuestros programas cuentan con RVOE otorgado por la DGAIR-SEP, garantizando el valor oficial de tu título.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-check">✓</div>
+              <div class="why-list-text">
+                <strong>Tecnología educativa de vanguardia</strong>
+                <span>Campus virtual sobre Moodle, recursos multimedia, inteligencia artificial aplicada y herramientas colaborativas en la nube.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-check">✓</div>
+              <div class="why-list-text">
+                <strong>Docentes especializados</strong>
+                <span>Profesores con experiencia profesional activa en sus áreas, comprometidos con tu formación integral.</span>
+              </div>
+            </li>
+            <li>
+              <div class="why-check">✓</div>
+              <div class="why-list-text">
+                <strong>Enfoque interdisciplinario</strong>
+                <span>Formamos profesionistas capaces de conectar conocimientos de distintas áreas para resolver problemas reales.</span>
+              </div>
+            </li>
+          </ul>
+          <div style="margin-top:36px;">
+            <a href="https://wa.me/525529018664" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Solicitar información</a>
+          </div>
+        </div>
+
+        <div class="why-img-wrap">
+          <div class="why-badge-float">
+            <div class="num">SEP</div>
+            <div class="lbl">RVOE Vigente</div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Estudiante CIPIE"
+            class="why-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Banner ────────────────────────────────────── -->
+  <section class="cta-banner" id="contacto">
+    <div class="container">
+      <h2>Inicia tu camino hoy mismo</h2>
+      <p>Contáctanos por WhatsApp o escríbenos. Te asesoramos sin costo.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/525529018664" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Escribir por WhatsApp
+        </a>
+        <a href="mailto:controlescolar@cipie.edu.mx" class="btn btn-outline">
+          Enviar correo
+        </a>
+        <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          Campus Virtual
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img
+              src="https://cipiecampusvirtual.moodlecloud.com/pluginfile.php/1/core_admin/logo/0x200/1774022256/LOGO%20XL%20CIPIE.png"
+              alt="Logo CIPIE"
+              class="footer-logo-img"
+            />
+          </div>
+          <p>Formamos líderes para transformar el futuro con excelencia académica, innovación y compromiso social.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/cipie.cipie.2025" target="_blank" rel="noopener noreferrer" title="Facebook">f</a>
+            <a href="https://www.instagram.com/colecipie/" target="_blank" rel="noopener noreferrer" title="Instagram">ig</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información institucional</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#oferta">Oferta académica</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="validacion-certificados.html">Validar certificado</a></li>
+            <li><a href="validacion-titulos.html">Validar título</a></li>
+            <li><a href="https://cipie.edu.mx" target="_blank" rel="noopener noreferrer">Sitio oficial</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programas</h4>
+          <ul>
+            <li><a href="pedagogia.html" target="_blank" rel="noopener noreferrer">Lic. en Pedagogía</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/derecho/" target="_blank" rel="noopener noreferrer">Lic. en Derecho</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/administracion/" target="_blank" rel="noopener noreferrer">Lic. en Administración</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/posgrados/" target="_blank" rel="noopener noreferrer">Maestrías</a></li>
+            <li><a href="https://cipie.edu.mx/index.php/posgrados/" target="_blank" rel="noopener noreferrer">Doctorados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div class="footer-contact-detail">
+              <a href="tel:5529018664">+52 55 2901 8664</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉</div>
+            <div class="footer-contact-detail">
+              <a href="mailto:controlescolar@cipie.edu.mx">controlescolar@cipie.edu.mx</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🌐</div>
+            <div class="footer-contact-detail">
+              <a href="https://cipie.edu.mx" target="_blank" rel="noopener noreferrer">cipie.edu.mx</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">🎓</div>
+            <div class="footer-contact-detail">
+              <a href="https://cipiecampusvirtual.moodlecloud.com/login/index.php" target="_blank" rel="noopener noreferrer">Campus Virtual</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CIPIE – Colegio Interdisciplinario de Profesionistas en Innovación Educativa. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="aviso-privacidad.html">Aviso de privacidad</a>
+          <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Inscripción Modal ─────────────────────────────── -->
+  <div class="modal-overlay" id="inscripcionModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar formulario">✕</button>
+      <div class="modal-header">
+        <div class="section-label">Inscripciones</div>
+        <h2 class="modal-title" id="modalTitle">Solicitar información</h2>
+        <p class="modal-sub">Déjanos tus datos y te contactaremos para orientarte sobre programas, costos y proceso de ingreso.</p>
+      </div>
+      <form class="inscripcion-form" id="inscripcionForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-nombre">Nombre completo <span class="req">*</span></label>
+            <input type="text" id="fi-nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="fi-email">Correo electrónico <span class="req">*</span></label>
+            <input type="email" id="fi-email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-tel">Teléfono / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="fi-tel" name="telefono" placeholder="55 2901 8664" required autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="fi-programa">Programa de interés <span class="req">*</span></label>
+            <select id="fi-programa" name="programa" required>
+              <option value="" disabled selected>Selecciona un programa</option>
+              <optgroup label="Licenciaturas">
+                <option>Licenciatura en Pedagogía</option>
+                <option>Licenciatura en Derecho</option>
+                <option>Licenciatura en Administración de Empresas</option>
+              </optgroup>
+              <optgroup label="Posgrados">
+                <option>Maestría en Ciencias de la Educación</option>
+                <option>Maestría en Juicios Orales</option>
+                <option>Doctorado en Educación</option>
+                <option>Doctorado en Derecho</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fi-modalidad">Modalidad preferida</label>
+            <select id="fi-modalidad" name="modalidad">
+              <option value="" selected>Sin preferencia</option>
+              <option>Escolarizada (presencial)</option>
+              <option>Mixta / Híbrida</option>
+              <option>No escolarizada (100% en línea)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fi-mensaje">Mensaje o duda</label>
+            <textarea id="fi-mensaje" name="mensaje" placeholder="¿Tienes alguna pregunta o comentario?" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-check" id="fi-privacy-wrap">
+          <input type="checkbox" id="fi-privacy" name="privacidad" required />
+          <label for="fi-privacy">
+            Acepto el <a href="aviso-privacidad.html">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos para recibir información académica. <span class="req">*</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit-btn">Solicitar información →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── Chat Widget ──────────────────────────────────── -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- Panel -->
+    <div class="chat-panel" id="chatPanel" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">C</div>
+          <div>
+            <div class="chat-title">CIPIE IA</div>
+            <div class="chat-subtitle">Asistente virtual</div>
+          </div>
+        </div>
+        <button class="chat-close" id="chatClose" aria-label="Cerrar chat">✕</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-msg bot">
+          <p>¡Hola! Soy el asistente virtual de <strong>CIPIE</strong> con IA. Puedo responder cualquier pregunta sobre programas, admisiones, modalidades y más. ¿En qué puedo ayudarte?</p>
+        </div>
+      </div>
+
+      <div class="chat-chips" id="chatChips">
+        <button class="chip" data-msg="Licenciaturas">Licenciaturas</button>
+        <button class="chip" data-msg="Posgrados">Posgrados</button>
+        <button class="chip" data-msg="Admisiones">Admisiones</button>
+        <button class="chip" data-msg="Contacto">Contacto</button>
+      </div>
+
+      <div class="chat-input-row">
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-input"
+          placeholder="Escribe tu pregunta..."
+          maxlength="200"
+          autocomplete="off"
+        />
+        <button class="chat-send" id="chatSend" aria-label="Enviar">
+          <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- FAB -->
+    <button class="chat-fab" id="chatFab" aria-label="Abrir asistente virtual">
+      <span class="chat-fab-icon chat-fab-open">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+      </span>
+      <span class="chat-fab-icon chat-fab-close" style="display:none;">✕</span>
+      <span class="chat-fab-badge">IA</span>
+    </button>
+
+  </div>
+
+  <!-- ── WhatsApp FAB ──────────────────────────────────── -->
+  <a href="https://wa.me/525529018664" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" title="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2A15.2 15.2 0 0016 31.2C24.4 31.2 31.2 24.4 31.2 16S24.4.8 16 .8zm0 27.8a13.4 13.4 0 01-6.8-1.9l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A13.4 13.4 0 012.6 16C2.6 8.6 8.6 2.6 16 2.6S29.4 8.6 29.4 16 23.4 28.6 16 28.6zm7.4-10c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.6-.2.3-.5.3-.9.1-.4-.2-1.8-.7-3.4-2.1-1.3-1.1-2.1-2.5-2.4-2.9-.2-.4 0-.6.2-.8l.7-.8c.2-.2.2-.4.4-.7.1-.2 0-.5-.1-.7-.1-.2-1-2.3-1.3-3.2-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.4-1.4 3.3 0 2 1.4 3.8 1.6 4.1.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.2.8.9.3 1.8.2 2.4.1.7-.1 2.2-.9 2.5-1.8.3-.8.3-1.6.2-1.7-.1-.2-.4-.3-.8-.5z"/>
+    </svg>
+  </a>
+
+  <!-- ── JS ───────────────────────────────────────────── -->
+  <script>
+    // ── Inscripción Modal ───────────────────────────────
+    const inscripcionModal = document.getElementById('inscripcionModal');
+
+    function openInscripcionModal(programa) {
+      inscripcionModal.classList.add('active');
+      inscripcionModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (programa) {
+        var sel = document.getElementById('fi-programa');
+        sel.value = programa;
+        sel.classList.remove('invalid');
+      }
+    }
+
+    function closeInscripcionModal() {
+      inscripcionModal.classList.remove('active');
+      inscripcionModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeInscripcionModal);
+    inscripcionModal.addEventListener('click', function (e) {
+      if (e.target === this) closeInscripcionModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeInscripcionModal();
+    });
+
+    document.getElementById('inscripcionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nombre    = document.getElementById('fi-nombre').value.trim();
+      const email     = document.getElementById('fi-email').value.trim();
+      const tel       = document.getElementById('fi-tel').value.trim();
+      const programa  = document.getElementById('fi-programa').value;
+      const modalidad = document.getElementById('fi-modalidad').value;
+      const mensaje   = document.getElementById('fi-mensaje').value.trim();
+      const privacy   = document.getElementById('fi-privacy').checked;
+
+      // Validate required fields
+      let valid = true;
+      ['fi-nombre', 'fi-email', 'fi-tel', 'fi-programa'].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) { el.classList.add('invalid'); valid = false; }
+        else el.classList.remove('invalid');
+      });
+
+      const privacyWrap = document.getElementById('fi-privacy-wrap');
+      if (!privacy) { privacyWrap.classList.add('invalid-check'); valid = false; }
+      else privacyWrap.classList.remove('invalid-check');
+
+      if (!valid) return;
+
+      // Build WhatsApp message
+      let msg = 'Hola, me interesa recibir información sobre CIPIE.\n\n'
+              + '*Nombre:* ' + nombre + '\n'
+              + '*Email:* ' + email + '\n'
+              + '*Teléfono:* ' + tel + '\n'
+              + '*Programa de interés:* ' + programa;
+      if (modalidad) msg += '\n*Modalidad preferida:* ' + modalidad;
+      if (mensaje)   msg += '\n*Mensaje:* ' + mensaje;
+
+      window.open('https://wa.me/525529018664?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
+      closeInscripcionModal();
+      this.reset();
+    });
+
+    // Clear invalid state on input
+    ['fi-nombre', 'fi-email', 'fi-tel', 'fi-programa'].forEach(function (id) {
+      document.getElementById(id).addEventListener('input', function () {
+        this.classList.remove('invalid');
+      });
+    });
+    document.getElementById('fi-privacy').addEventListener('change', function () {
+      document.getElementById('fi-privacy-wrap').classList.remove('invalid-check');
+    });
+
+    // ── Tabs ───────────────────────────────────────────
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('panel-' + target).classList.add('active');
+      });
+    });
+
+    // ── Mobile nav ─────────────────────────────────────
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    // Function to toggle mobile menu
+    function toggleMobileMenu() {
+      mainNav.classList.toggle('open');
+      mainNav.classList.toggle('nav-open');
+      hamburgerBtn.classList.toggle('active');
+      document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : '';
+    }
+
+    // Function to close mobile menu
+    function closeMobileMenu() {
+      mainNav.classList.remove('open');
+      mainNav.classList.remove('nav-open');
+      hamburgerBtn.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // El evento 'click' ya funciona con un toque en móvil. Usar también
+    // 'touchstart' provocaba doble disparo y cerraba el menú antes de que
+    // el enlace navegara, por eso los botones "no hacían nada" en celular.
+    hamburgerBtn.addEventListener('click', toggleMobileMenu);
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // ── Header shadow on scroll ─────────────────────────
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      header.style.boxShadow = window.scrollY > 40
+        ? '0 2px 24px rgba(13,27,46,.4)'
+        : '0 2px 16px rgba(13,27,46,.2)';
+    });
+
+    // ── Chat Widget ─────────────────────────────────────
+    const chatFab     = document.getElementById('chatFab');
+    const chatPanel   = document.getElementById('chatPanel');
+    const chatClose   = document.getElementById('chatClose');
+    const chatMessages= document.getElementById('chatMessages');
+    const chatInput   = document.getElementById('chatInput');
+    const chatSend    = document.getElementById('chatSend');
+    const chatChips   = document.getElementById('chatChips');
+    const fabOpen     = chatFab.querySelector('.chat-fab-open');
+    const fabClose    = chatFab.querySelector('.chat-fab-close');
+
+    let isOpen = false;
+
+    function openChat() {
+      isOpen = true;
+      chatPanel.classList.add('active');
+      chatPanel.setAttribute('aria-hidden', 'false');
+      fabOpen.style.display  = 'none';
+      fabClose.style.display = 'block';
+      chatInput.focus();
+    }
+
+    function closeChat() {
+      isOpen = false;
+      chatPanel.classList.remove('active');
+      chatPanel.setAttribute('aria-hidden', 'true');
+      fabOpen.style.display  = 'block';
+      fabClose.style.display = 'none';
+    }
+
+    chatFab.addEventListener('click', () => isOpen ? closeChat() : openChat());
+    chatClose.addEventListener('click', closeChat);
+
+    // ── Asistente IA ────────────────────────────────────
+    // La clave de Gemini vive SOLO en el servidor (app.py, variable de entorno
+    // GEMINI_API_KEY). El navegador llama a este endpoint relativo. Si el sitio
+    // se sirve como estático (p. ej. GitHub Pages) el endpoint no existe y se
+    // usa automáticamente el respaldo local de abajo.
+    const CHAT_ENDPOINT = '/api/chat';
+
+    // Historial de conversación para dar contexto al modelo.
+    const conversationHistory = [];
+
+    async function callChatAPI(userMessage) {
+      const response = await fetch(CHAT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: userMessage,
+          history: conversationHistory
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('IA no disponible (' + response.status + ')');
+      }
+
+      const data = await response.json();
+      const reply = data.reply || 'Sin respuesta.';
+      conversationHistory.push({ role: 'user', text: userMessage });
+      conversationHistory.push({ role: 'model', text: reply });
+      if (conversationHistory.length > 20) {
+        conversationHistory.splice(0, conversationHistory.length - 20);
+      }
+      return reply;
+    }
+
+    // Fallback local cuando no hay API key configurada
+    const KB = [
+      { keys: ['licenciatura', 'carrera', 'pregrado'], answer: 'Ofrecemos 3 licenciaturas con RVOE:\n- <b>Pedagogía</b> – 9 cuatrimestres, modalidad mixta\n- <b>Derecho</b> – 9 cuatrimestres, modalidad escolar\n- <b>Administración de Empresas</b> – 9 cuatrimestres, en línea\n¿Quieres info de alguna en particular?' },
+      { keys: ['posgrado', 'maestría', 'maestria', 'doctorado'], answer: 'Posgrados disponibles (4 cuatrimestres c/u):\n- Maestría en Ciencias de la Educación\n- Maestría en Juicios Orales\n- Doctorado en Educación\n- Doctorado en Derecho' },
+      { keys: ['admision', 'admisión', 'inscripcion', 'inscripción', 'requisito', 'inscribir'], answer: 'Requisitos: certificado de estudios, ID oficial y CURP.\nEscríbenos al WhatsApp <b>+52 55 2901 8664</b> para iniciar tu proceso.' },
+      { keys: ['costo', 'precio', 'colegiatura', 'pago'], answer: 'Para costos y opciones de pago contáctanos:\n📱 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>' },
+      { keys: ['modalidad', 'linea', 'online', 'presencial'], answer: '3 modalidades: <b>Escolarizada</b> (presencial), <b>Mixta</b> (híbrida) y <b>No escolarizada</b> (100% en línea vía Moodle).' },
+      { keys: ['contacto', 'telefono', 'correo', 'email'], answer: '📞 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>\n🌐 cipie.edu.mx' },
+      { keys: ['hola', 'buenos', 'buenas'], answer: '¡Hola! 👋 Soy el asistente de CIPIE. Puedo ayudarte con info sobre programas, admisiones o contacto.' },
+      { keys: ['gracias'], answer: '¡Con gusto! Para atención personalizada escríbenos al WhatsApp <b>+52 55 2901 8664</b>. 😊' }
+    ];
+
+    function getFallbackAnswer(text) {
+      const lower = text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      for (const e of KB) {
+        if (e.keys.some(k => lower.includes(k))) return e.answer;
+      }
+      return 'Puedes consultarnos directamente:\n📱 <b>+52 55 2901 8664</b>\n✉ <b>controlescolar@cipie.edu.mx</b>';
+    }
+
+    function addMessage(html, role) {
+      const div = document.createElement('div');
+      div.className = 'chat-msg ' + role;
+      const p = document.createElement('p');
+      // Convert plain newlines to <br> and keep existing HTML
+      p.innerHTML = html.replace(/\n/g, '<br>');
+      div.appendChild(p);
+      chatMessages.appendChild(div);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function showTyping() {
+      const typing = document.createElement('div');
+      typing.className = 'chat-msg bot typing';
+      typing.id = 'typingIndicator';
+      typing.innerHTML = '<p><span class="dot"></span><span class="dot"></span><span class="dot"></span></p>';
+      chatMessages.appendChild(typing);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+      return typing;
+    }
+
+    async function sendMessage(text) {
+      text = text.trim();
+      if (!text) return;
+
+      addMessage(text, 'user');
+      chatInput.value = '';
+      chatInput.disabled = true;
+      chatSend.disabled = true;
+      chatChips.style.display = 'none';
+
+      const typing = showTyping();
+
+      // Intenta el asistente IA del servidor; si no está disponible
+      // (p. ej. sitio estático), usa el respaldo local de conocimiento.
+      let reply;
+      try {
+        reply = await callChatAPI(text);
+      } catch (e) {
+        reply = getFallbackAnswer(text);
+      }
+      typing.remove();
+      addMessage(reply, 'bot');
+
+      chatInput.disabled = false;
+      chatSend.disabled = false;
+      chatInput.focus();
+    }
+
+    chatSend.addEventListener('click', () => sendMessage(chatInput.value));
+    chatInput.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey) sendMessage(chatInput.value); });
+    chatChips.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => sendMessage(chip.dataset.msg));
+    });
+  </script>
+
+</body>
+</html>
